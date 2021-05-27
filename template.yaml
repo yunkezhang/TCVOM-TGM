@@ -1,0 +1,23 @@
+SYSTEM:
+  NUM_WORKERS: 4
+  RANDOM_SEED: -1
+  OUTDIR: "/path/to/outdir"
+
+DATASET:
+  PATH: '/path/to/video_clip'
+
+FINETUNE:
+  SAVE_FREQ: -1
+
+TRAIN:
+  UNKNOWN_WEIGHT: 1.0
+  LOAD_CKPT: 'trimap_ep150.pth'
+  BATCH_SIZE_PER_GPU: 1
+  BASE_LR: 1e-6     # You can also try 5e-6 and 1e-5.
+  LR_STRATEGY: 'const'
+  WEIGHT_DECAY: 1e-4
+  TRAIN_INPUT_SIZE: (512, 512)  # We suggest you downsample the original image and set a large input size to get more robust result.
+  OPTIMIZER: 'adam'
+  TOTAL_STEPS: 500  # We suggest you keep TOTAL_STEPS under 1000 to prevent overfitting. 500-800 is generally good enough.
+  PRINT_FREQ: 10
+  IMAGE_FREQ: 100
