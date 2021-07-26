@@ -1,6 +1,6 @@
-# Attention-guided Temporal Coherent Video Object Matting Trimap Generation Module
+# Attention-guided Temporally Coherent Video Object Matting Trimap Generation Module
 
-Here we provide the inference (online-finetuning included) code and pretrained weight for our trimap generation module in our paper **Attention-guided Temporal Coherent Video Object Matting**.
+Here we provide the inference (online-finetuning included) code and pretrained weight for our trimap generation module in our paper **Attention-guided Temporally Coherent Video Object Matting**.
 
 **The code, the trained model are for academic and non-commercial use only.**
 
